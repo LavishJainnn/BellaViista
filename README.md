@@ -1,2 +1,2 @@
-# BellaViista
+# BellaVista
 --> https://bellavistabylavish.netlify.app/
