@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    /* outline: 1px solid red; */
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    padding-top: 7rem;
+}
+
+
+
+
+/* navbar */
+.navbar{
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 12rem;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.logo h2{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.logo p{
+    color: rgb(206, 206, 206);
+}
+.navList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 64px;
+}
+.navElements{
+    list-style: none;
+    transition: all 0.5s ease;
+    padding: 8px 12px;
+}
+.navElements:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+.navAnchors{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* hero page */
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 85vh;
+    width: auto;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heroText h1{
+    font-size: 4rem;
+    font-weight: 500;
+    word-spacing: 8px;
+    color: white;
+    text-align: center;
+    animation: fadeINOut 0.5s ease 0.1s;
+}
+.heroText2{
+    text-align: center;
+    animation: fadeINOut 0.5s ease 0.1s;
+    color: white;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.menu-btn{
+    background-color: orangered;
+    padding: 16px 24px;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+.reserv-btn{
+    background-color: rgba(0, 0, 0, 0.47);
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1.5px solid white;
+    font-weight: 700;
+}
+.menu-btn:hover{
+    background-color: rgb(202, 54, 0);
+}
+.reserv-btn:hover{
+    background-color: white;
+    color: orangered;
+}
+
+
+
+/* Menu */
+#menu{
+    background-color: rgb(245, 245, 245);
+    height: 84vh;
+}
+.menuTitle{
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+.menuText{
+    color: #2c3e50;
+    display: block;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.appetizers{
+    padding: 0 12rem;
+}
+.AText{
+    font-size: xx-large;
+    padding: 10px 0;
+}
+.appetizers hr{
+    background-color: orange;
+    height: 2.5px;
+    border: none;
+    border-end-start-radius: 1.5px;
+}
+.A{
+    background-color: white;
+    padding: 1.6rem;
+    margin: 32px 0;
+    border-radius: 6px;
+    box-shadow: #b7b9bb 0px 0px 10px;
+    line-height: 1.8rem;
+    animation: fadeINOut 0.5s ease 0.1s;
+    transition: transform 0.3s ease-out;
+}
+.A:hover{
+    transform: translate(0, -8px);
+}
+.Aflex{
+    display: flex;
+    justify-content: space-between;
+}
+.APrice{
+    color: orangered;
+}
+.ADescription{
+    color: #65727e;
+}
+
+
+
+
+/* About */
+#about{
+    background-color: #ffffff;
+    height: 84vh;
+    padding: 0 12rem;
+}
+.abtTitle, .conTitle{
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    padding: 44px 0;
+    margin: 0 auto;
+}
+.abtGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 64px;
+}
+.abtLeft{
+    line-height: 1.8;
+}
+.abtText{
+    font-size: 2rem;
+    padding: 32px 0;
+    color: #2a3e51;
+}
+.abtContent{
+    animation: fadeINOut 0.5s ease 0.1s;
+    color: #65727e;
+}
+.abtRight{
+    background-image: url('/images/aboutUs.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+    border-radius: 64px;
+}
+
+
+
+
+/* Contact Us */
+#contact{
+    padding: 0 12rem;
+    background-color: rgb(245, 245, 245);
+}
+.contGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+.label{
+    font-size: 1.6rem;
+    padding: 2rem 0;
+}
+.contact{    
+    line-height: 2.4rem;
+}
+.anime1{animation: fadeINOut 0.5s ease 0.2s;}
+.anime2{animation: fadeINOut 0.5s ease 0.4s;}
+.anime3{animation: fadeINOut 0.5s ease 0.6s;}
+.conlabel{
+    font-size: 1.2rem;
+    color: #50575e;
+    margin-top: 24px;
+}
+.condetails{
+    color: #7f848a;
+}
+.details{
+    line-height: 1.2rem;
+}
+.detail1, .detail2, .detail3, .detail4, .detail5, .detail6{
+    width: 80%;
+    height: 40px;
+    font-size: larger;
+    padding: 8px 8px;
+}
+.detail7{
+    width: 80%;
+    height: 64px;
+}
+.sub-btn{
+    padding: 1.1rem 1.4rem;
+    border-radius: 8px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    margin: 24px 0;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+
+
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #2a3e51;
+    color: white;
+    padding: 4rem 11rem;
+}
+.fUpper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px;
+}
+.fHead{
+    font-size: 1.4rem;
+    padding: 1.1rem 0;
+}
+.fText{
+    color: #b7b9bb;
+    line-height: 1.5;
+}
+.fNav{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    list-style: none;
+}
+.fNav li a{
+    color: #b7b9bb;
+    text-decoration: none;
+}
+.fFlex{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+.fFlex a{
+    color: #b7b9bb;
+    text-decoration: none;
+    background-color: #b7b9bb36;
+    padding: 8px;
+    border-radius: 4px;
+}
+.footer hr{
+    margin: 48px 0px;
+}
+.cr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px){
+    main{
+        padding-top: 6rem;
+    }
+    .navbar{
+        padding: 1rem 6rem;
+    }
+    .navList{
+        gap: 32px;
+    }
+    .heroText h1{
+        font-size: 2.5rem;
+    }
+    .appetizers, #about, #contact{
+        padding: 0 8rem;
+    }
+    #about, #contact, #menu{
+        height: auto;
+    }
+    .menuTitle, .abtTitle, .conTitle{
+        font-size: 2.5rem;
+    }
+    .footer{
+        padding: 1rem 4rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    main{
+        padding-top: 6rem;
+    }
+    .navbar{
+        padding: 1rem 2rem;
+    }
+    .navList{
+        gap: 16px;
+    }
+    .heroText h1{
+        font-size: 2rem;
+    }
+    .appetizers, #about, #contact{
+        padding: 0 4rem;
+    }
+    .menuTitle, .abtTitle, .conTitle{
+        font-size: 2.5rem;
+    }
+    #about, #contact, #menu{
+        height: auto;
+    }
+    #contact{
+        margin-top: 40px;
+    }
+    .abtGrid{
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .abtRight{
+        height: 200px;
+        width: 100%;
+        border-radius: 32px;
+        background-size: cover;
+        background-position: center;
+    }
+    .abtLeft{
+        line-height: 1.2;
+    }
+    .contGrid{
+        grid-template-columns: 1fr;
+    }
+    .fUpper{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+
+@media (max-width: 480px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .navList{
+        flex-direction: row;
+        gap: 8px;
+    }
+    .heroText h1{
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .heroText2 span{
+        font-size: 0.8rem;
+    }
+    .appetizers, #about, #contact{
+        padding: 0 1rem;
+    }
+    .ADescription{
+        font-size: 0.8rem;
+    }
+    .menuTitle, .abtTitle, .conTitle{
+        font-size: 2rem;
+        padding: 12px 0;
+    }
+    #contact{
+        margin-top: 40px;
+    }
+    .abtGrid{
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .abtRight{
+        height: 200px;
+        width: 100%;
+        border-radius: 32px;
+        background-size: cover;
+        background-position: center;
+    }
+    #about, #contact, #menu{
+        height: auto;
+    }
+    .fUpper{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .footer{
+        padding: 1rem;
+    }
+    .fFlex{
+        flex-direction: column;
+    }
+    .cr{
+        font-size: smaller;
+    }
+}
+
+
+
+
+/* Animations */
+@keyframes fadeINOut {
+    from{
+        transform: translate(0, 20px);
+        opacity: 10%;
+    }
+    to{
+        transform: translate(0, 0px);
+        opacity: 100%;
+    }
+}

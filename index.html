@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Bella Vista - Authentic Italian Restaurant serving fresh pasta, wood-fired pizzas and traditional Italian cuisine in the heart of the city">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Bella Vista</h2>
+            <p>Authentic Italian Cuisine</p>
+        </div>
+        <div class="navlinks">
+            <ul class="navList">
+                <li class="navElements"><a class="navAnchors" href="#home">Home</a></li>
+                <li class="navElements"><a class="navAnchors" href="#menu">Menu</a></li>
+                <li class="navElements"><a class="navAnchors" href="#about">About</a></li>
+                <li class="navElements"><a class="navAnchors" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="heroSection">
+                <div class="heroContent">
+                    <div class="heroText">
+                        <h1>Welcome to Bella - Vista</h1>
+                    </div>
+                    <div class="heroText2">
+                        <span>Experience the authentic tase of Italy in the heart of the city</span>
+                    </div>
+                    <div class="btn">
+                        <form action="#menu">
+                            <button class="menu-btn">View Menu</button>
+                        </form>
+                        <form action="#contact">
+                            <button class="reserv-btn">Make Reservation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu">
+            <h2 class="menuTitle">Our Menu</h2>
+            <span class="menuText">Discover our carefully crafted dishes!</span>
+            <div class="appetizers">
+                <h3 class="AText">Appetizers</h3>
+                <hr>
+                <div class="A">
+                    <div class="Aflex">
+                        <h4 class="dish">Brushetta Intaliana</h4>
+                        <span class="APrice">$12</span>
+                    </div>
+                    <span class="ADescription">Fresh tomatoes, basil and mozarella on toasted bread</span>
+                </div>
+                <div class="A">
+                    <div class="Aflex">
+                        <h4 class="dish">Antipasto Platter</h4>
+                        <span class="APrice">$18</span>
+                    </div>
+                    <span class="ADescription">Selection of cured meats, cheeses and marinated vegetabes</span>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2 class="abtTitle">About Bella Vista</h2>
+            <div class="abtGrid">
+                <div class="abtLeft">
+                    <h3 class="abtText">Our Story</h3>
+                    <span class="abtContent">
+                        Nestled in the heart of the city, Bella Vista was born from a passion for soulful food, warm hospitality, and unforgettable views. Inspired by the charm of European cafés and the rich flavors of Mediterranean kitchens, we opened our doors to offer a dining experience that feels like a cozy escape from the everyday.
+                        <br><br>
+                        But we're more than just what's on the plate. Whether you're here for a quiet lunch, a romantic dinner, or a celebration, we've created a space that feels like home.
+                    </span>
+                </div>
+                <div class="abtRight"></div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="conTitle">Contact Us</h2>
+            <div class="contGrid">
+                <div class="conLeft">
+                    <h3 class="label">Get in Touch</h3>
+                    <div class="contact">
+                        <div class="anime1">
+                            <h4 class="conlabel">Address:</h4>
+                            <span class="condetails">Bella Vista Ristorante, Via delle Rose, Roma, Italia</span>
+                        </div>
+                        <div class="anime2">
+                            <h4 class="conlabel">Phone:</h4>
+                            <span class="condetails">+39 06 1234 5678</span>
+                        </div>
+                        <div class="anime3">
+                            <h4 class="conlabel">Email:</h4>
+                            <span class="condetails">info@bellavistaroma.it</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="#contact" class="conRight">
+                    <h3 class="label">Make a Reservation</h3>
+                    <div class="details">
+                        <h4 class="conlabel">Name:</h4>
+                        <input type="text" class="detail1" required>
+                        <h4 class="conlabel">E-mail:</h4>
+                        <input type="email" class="detail2" required>
+                        <h4 class="conlabel">Phone:</h4>
+                        <input type="number" class="detail3" required>
+                        <h4 class="conlabel">Reservation Date:</h4>
+                        <input type="date" class="detail4" required>
+                        <h4 class="conlabel">Time:</h4>
+                        <input type="time" class="detail5" required>
+                        <h4 class="conlabel">Number of Guests:</h4>
+                        <select class="detail6" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <h4 class="conlabel">Special Requests:</h4>
+                        <textarea type="text" class="detail7"></textarea>
+                    </div>
+                    <button type="submit" class="sub-btn">Submit Reservation</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="fUpper">
+            <div class="footContent">
+                <h3 class="fHead">Bella Vista</h3>
+                <div class="fText">Authentic Italian cuisine in the heart of the city. Experience the taste of Italy with every bite.</div>
+            </div>
+            <div class="footContent">
+                <h3 class="fHead">Quick Links</h3>
+                <ul class="fNav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footContent">
+                <h3 class="fHead">Opening Hours</h3>
+                <div class="fText">
+                    <p>Weekdays: 9:00 AM to 11:00 PM</p>
+                    <p>Weekends: 9:00 AM to 1:00 AM</p>
+                </div>
+            </div>
+            <div class="footContent">
+                <h3 class="fHead">Follow Us</h3>
+                <div class="fFlex">
+                    <a href="#" class="socials">Facebook</a>
+                    <a href="#" class="socials">Instagram</a>
+                    <a href="#" class="socials">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="cr">©2025 Bella Vista Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
